@@ -1,0 +1,23 @@
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  color: unset;
+  text-decoration-line: none;
+}
