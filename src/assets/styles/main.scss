@@ -1,4 +1,7 @@
-@import "./base/_typography.scss", "./base/_reset.scss",
-  "./base/_normalize.scss";
-@import "./layout/_header.scss", "./layout/_footer.scss";
-@import "./utils/_layout.scss";
+@use "./base/_typography.scss";
+@use "./base/_reset.scss";
+@use "./base/_normalize.scss";
+@use "./components/_banner.scss";
+@use "./layout/_header.scss";
+@use "./layout/_footer.scss";
+@use "./utils/_layout.scss";
