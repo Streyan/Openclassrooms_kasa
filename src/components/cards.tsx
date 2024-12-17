@@ -2,7 +2,11 @@ import Card from "./card";
 
 function Cards() {
   return (
-    <div className="flex-column">
+    <div className="cards">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
       <Card />
       <Card />
     </div>

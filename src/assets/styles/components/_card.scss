@@ -1,0 +1,21 @@
+.card {
+  height: 340px;
+  position: relative;
+  background-color: #ff6060;
+  border-radius: 25px;
+  &_picture {
+  }
+  &_background {
+  }
+  &_blur {
+  }
+  &_title {
+    z-index: 10000;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+}
