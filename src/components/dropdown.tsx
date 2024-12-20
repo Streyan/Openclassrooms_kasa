@@ -1,10 +1,35 @@
-import logo from "../assets/images/LOGO.png";
+import { useState } from "react";
 
-function Dropdown() {
+interface Props {
+  title: string;
+  text: string;
+}
+
+function Dropdown({ title, text }: Props) {
+  const [isCollapseOpen, setCollapse] = useState<boolean>(false);
+
   return (
-    <div className="flex-column">
-      DROPDOWN
-      <img src={logo} className="logo" alt="Kasa logo" />
+    <div className="flex-column dropdown">
+      <div className="flex-space-between dropdown_header">
+        <div className="dropdown_header_title">{title}</div>
+        <button
+          className="dropdown_header_arrow"
+          onClick={() => setCollapse(!isCollapseOpen)}
+        >
+          {isCollapseOpen ? (
+            <i className="fa-solid fa-angle-up" />
+          ) : (
+            <i className="fa-solid fa-angle-down" />
+          )}
+        </button>
+      </div>
+      <div
+        className={
+          isCollapseOpen ? "dropdown_content_open" : "dropdown_content_closed"
+        }
+      >
+        <div className="dropdown_content_text">{text}</div>
+      </div>
     </div>
   );
 }

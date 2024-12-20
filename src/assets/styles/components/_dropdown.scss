@@ -1,0 +1,20 @@
+.dropdown {
+  width: 100%;
+  &_header {
+    width: 100%;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+    padding: 0 2rem 0 2rem;
+  }
+  &_content_open {
+    width: 100%;
+    background-color: #f6f6f673;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem;
+  }
+  &_content_closed {
+    display: none;
+  }
+}
