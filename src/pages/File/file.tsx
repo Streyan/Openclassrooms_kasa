@@ -14,15 +14,15 @@ function File() {
   return (
     <>
       <div>
-        <Carrousel imageURL={logementSelected.cover} />
-        <div className="title">
-          <h2>{logementSelected.title}</h2>
-          <h3>{logementSelected.location}</h3>
-        </div>
-        <Host host={logementSelected.host} />
-        <Rate rate={logementSelected.rating} />
-        <Tags tags={logementSelected.tags} />
-        <div className="flex-row">
+        <Carrousel imageURL={logementSelected.pictures} />
+        <div className="logement_body">
+          <div className="title">
+            <h2 className="logement_title">{logementSelected.title}</h2>
+            <h3 className="logement_location">{logementSelected.location}</h3>
+          </div>
+          <Host host={logementSelected.host} />
+          <Tags tags={logementSelected.tags} />
+          <Rate rate={logementSelected.rating} />
           <Dropdown title="description" text={logementSelected.description} />
           <Dropdown title="equipement" text={logementSelected.description} />
         </div>

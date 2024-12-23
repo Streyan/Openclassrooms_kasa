@@ -5,7 +5,12 @@ function Cards() {
   return (
     <div className="cards">
       {logements.map((logement) => (
-        <Card id={logement.id} title={logement.title} />
+        <Card
+          id={logement.id}
+          title={logement.title}
+          imageURL={logement.cover}
+          key={logement.id}
+        />
       ))}
     </div>
   );

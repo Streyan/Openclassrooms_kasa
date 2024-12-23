@@ -1,0 +1,19 @@
+.logement {
+  &_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  &_title {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  &_location {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

@@ -6,9 +6,9 @@ interface Props {
 
 function Tags({ tags }: Props) {
   return (
-    <div className="flex-column dropdowns">
+    <div className="flex-row tags">
       {tags.map((tag) => (
-        <Tag value={tag} />
+        <Tag value={tag} key={tag} />
       ))}
     </div>
   );

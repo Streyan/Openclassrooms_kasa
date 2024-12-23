@@ -4,7 +4,7 @@ interface Props {
 
 function Tag({ value }: Props) {
   return (
-    <div className="flex-column tag">
+    <div className="tag">
       <p>{value}</p>
     </div>
   );
