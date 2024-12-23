@@ -1,14 +1,12 @@
 import Card from "./card";
+import logements from "../../logements.json";
 
 function Cards() {
   return (
     <div className="cards">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {logements.map((logement) => (
+        <Card id={logement.id} title={logement.title} />
+      ))}
     </div>
   );
 }

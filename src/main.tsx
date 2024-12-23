@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")!).render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/file" element={<File />} />
+        <Route path="/file/:fileId" element={<File />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>

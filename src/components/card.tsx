@@ -1,11 +1,14 @@
+import { Link } from "react-router";
+
 interface Props {
+  id?: string;
   title?: string;
   imageURL?: string;
 }
 
-function Card({ title, imageURL }: Props) {
+function Card({ id, title, imageURL }: Props) {
   return (
-    <div className="flex-column card">
+    <Link to={`/file/${id}`} className="flex-column card">
       <p className="card_title">{title ?? "Titre de la location"}</p>
       <div className="card_background">
         <div className="card_blur"></div>
@@ -15,7 +18,7 @@ function Card({ title, imageURL }: Props) {
           alt="image de la location"
         />
       </div>
-    </div>
+    </Link>
   );
 }
 

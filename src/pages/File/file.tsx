@@ -1,28 +1,32 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
+import { useParams } from "react-router";
+import { getLogementFromID, Logement } from "./files";
+import Carrousel from "../../components/carrousel";
+import Host from "../../components/host";
+import Rate from "../../components/rate";
+import Tags from "../../components/tags";
+import Dropdown from "../../components/dropdown";
 
 function File() {
-  const [count, setCount] = useState(0);
+  const { fileId } = useParams();
+
+  const logementSelected: Logement = getLogementFromID(fileId);
 
   return (
     <>
-      FILE
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank"></a>
+        <Carrousel imageURL={logementSelected.cover} />
+        <div className="title">
+          <h2>{logementSelected.title}</h2>
+          <h3>{logementSelected.location}</h3>
+        </div>
+        <Host host={logementSelected.host} />
+        <Rate rate={logementSelected.rating} />
+        <Tags tags={logementSelected.tags} />
+        <div className="flex-row">
+          <Dropdown title="description" text={logementSelected.description} />
+          <Dropdown title="equipement" text={logementSelected.description} />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>TITI</p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
