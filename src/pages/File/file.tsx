@@ -24,7 +24,7 @@ function File() {
           <Tags tags={logementSelected.tags} />
           <Rate rate={logementSelected.rating} />
           <Dropdown title="description" text={logementSelected.description} />
-          <Dropdown title="equipement" text={logementSelected.description} />
+          <Dropdown title="equipement" text={logementSelected.equipments} />
         </div>
       </div>
     </>

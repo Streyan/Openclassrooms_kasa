@@ -2,7 +2,7 @@ import { useState } from "react";
 
 interface Props {
   title: string;
-  text: string;
+  text: string | string[];
 }
 
 function Dropdown({ title, text }: Props) {
@@ -28,7 +28,15 @@ function Dropdown({ title, text }: Props) {
           isCollapseOpen ? "dropdown_content_open" : "dropdown_content_closed"
         }
       >
-        <div className="dropdown_content_text">{text}</div>
+        <div className="dropdown_content_text">
+          {typeof text === "string"
+            ? text
+            : text.map((line) => (
+                <>
+                  {line} <br />
+                </>
+              ))}
+        </div>
       </div>
     </div>
   );

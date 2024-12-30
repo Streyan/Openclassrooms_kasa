@@ -1,11 +1,15 @@
 .dropdown {
   width: 100%;
   &_header {
+    height: 2rem;
     width: 100%;
     background-color: #ff6060;
     color: white;
     border-radius: 5px;
     padding: 0 2rem 0 2rem;
+    &_title {
+      text-transform: capitalize;
+    }
   }
   &_content_open {
     width: 100%;

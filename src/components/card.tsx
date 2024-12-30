@@ -1,9 +1,9 @@
 import { Link } from "react-router";
 
 interface Props {
-  id?: string;
+  id: string;
   title: string;
-  imageURL?: string;
+  imageURL: string;
 }
 
 function Card({ id, title, imageURL }: Props) {
@@ -14,7 +14,7 @@ function Card({ id, title, imageURL }: Props) {
         <div className="card_blur"></div>
         <img
           className="card_picture"
-          src={imageURL ?? "./src/assets/images/LOGO.png"}
+          src={imageURL}
           alt="image de la location"
         />
       </div>

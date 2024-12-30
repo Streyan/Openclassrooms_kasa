@@ -1,9 +1,11 @@
 .host {
+  justify-content: flex-end;
   &_name {
+    align-items: center;
     display: flex;
     color: #ff6060;
     font-weight: 500;
     font-size: 18px;
-    align-items: flex-end;
+    justify-content: flex-end;
   }
 }
