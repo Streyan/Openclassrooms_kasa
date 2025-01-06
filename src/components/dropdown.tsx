@@ -11,7 +11,7 @@ function Dropdown({ title, text }: Props) {
   return (
     <div className="flex-column dropdown">
       <div className="flex-space-between dropdown_header">
-        <div className="dropdown_header_title">{title}</div>
+        <p className="dropdown_header_title">{title}</p>
         <button
           className="dropdown_header_arrow"
           onClick={() => setCollapse(!isCollapseOpen)}
@@ -29,13 +29,15 @@ function Dropdown({ title, text }: Props) {
         }
       >
         <div className="dropdown_content_text">
-          {typeof text === "string"
-            ? text
-            : text.map((line) => (
-                <>
-                  {line} <br />
-                </>
-              ))}
+          {typeof text === "string" ? (
+            <p>{text}</p>
+          ) : (
+            text.map((line) => (
+              <div key={line}>
+                <p>{line}</p> <br />
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>

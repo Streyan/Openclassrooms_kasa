@@ -5,15 +5,29 @@
     align-items: center;
     gap: 1rem;
     padding: 2rem;
+    @media (max-width: 425px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: flex-start;
+      padding: 1rem;
+    }
   }
 
   &_title {
     color: #ff6060;
     font-weight: 500;
     font-size: 36px;
+    @media (max-width: 425px) {
+      font-size: 18px;
+    }
   }
   &_location {
     font-weight: 500;
     font-size: 18px;
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
   }
 }

@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="flex-space-between header">
       <Link to="/">
-        <img src={logo} className="logo" alt="Kasa logo" />
+        <img src={logo} className="header_logo" alt="Kasa logo" />
       </Link>
       <nav className="flex-row">
         <Link to="/">Accueil</Link>

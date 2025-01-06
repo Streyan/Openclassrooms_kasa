@@ -1,15 +1,22 @@
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { getLogementFromID, Logement } from "./files";
 import Carrousel from "../../components/carrousel";
 import Host from "../../components/host";
 import Rate from "../../components/rate";
 import Tags from "../../components/tags";
 import Dropdown from "../../components/dropdown";
+import { useEffect } from "react";
 
 function File() {
   const { fileId } = useParams();
-
   const logementSelected: Logement = getLogementFromID(fileId);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (logementSelected.id === "") {
+      navigate("/error");
+    }
+  });
 
   return (
     <>

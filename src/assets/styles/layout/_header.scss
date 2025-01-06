@@ -1,4 +1,17 @@
 .header {
   padding: 2rem;
   min-height: 50px;
+  a {
+    @media (max-width: 425px) {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 425px) {
+    padding: 0.5rem;
+  }
+  &_logo {
+    @media (max-width: 425px) {
+      max-height: 50px;
+    }
+  }
 }

@@ -6,4 +6,14 @@
   border-radius: 25px;
   margin: 2rem;
   gap: 1rem;
+  @media (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 1.5rem;
+  }
 }

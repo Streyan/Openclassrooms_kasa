@@ -1,0 +1,17 @@
+.error-message {
+  gap: 2rem;
+  padding: 2rem;
+  &_title {
+    color: #ff6060;
+    font-weight: 700;
+    font-size: 288px;
+  }
+  &_subtitle {
+    color: #ff6060;
+    font-size: 36px;
+  }
+  &_link {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+}

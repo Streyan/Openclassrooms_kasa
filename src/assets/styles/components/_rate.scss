@@ -6,4 +6,7 @@
   &_empty {
     color: #e3e3e3;
   }
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 }
