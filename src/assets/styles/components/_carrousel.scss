@@ -3,7 +3,9 @@
   width: 100%;
   max-height: 415px;
   padding: 0 2rem 0 2rem;
-
+  @media (max-width: 425px) {
+    padding: 0.5rem;
+  }
   &_picture {
     object-fit: cover;
     width: 100%;

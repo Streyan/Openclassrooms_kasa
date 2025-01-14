@@ -19,22 +19,26 @@ function File() {
   });
 
   return (
-    <>
-      <div>
-        <Carrousel imageURL={logementSelected.pictures} />
-        <div className="logement_body">
-          <div className="title">
+    <main>
+      <Carrousel imageURL={logementSelected.pictures} />
+      <div className="logement_body">
+        <div className="logement_title-host-rate">
+          <div className="logement_title-location">
             <h2 className="logement_title">{logementSelected.title}</h2>
             <h3 className="logement_location">{logementSelected.location}</h3>
+            <Tags tags={logementSelected.tags} />
           </div>
-          <Host host={logementSelected.host} />
-          <Tags tags={logementSelected.tags} />
-          <Rate rate={logementSelected.rating} />
+          <div className="logement_host-rate">
+            <Host host={logementSelected.host} />
+            <Rate rate={logementSelected.rating} />
+          </div>
+        </div>
+        <div className="logement_description-equipements">
           <Dropdown title="description" text={logementSelected.description} />
           <Dropdown title="equipement" text={logementSelected.equipments} />
         </div>
       </div>
-    </>
+    </main>
   );
 }
 
