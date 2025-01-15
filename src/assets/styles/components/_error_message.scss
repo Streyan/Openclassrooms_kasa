@@ -1,17 +1,26 @@
 .error-message {
-  gap: 2rem;
-  padding: 2rem;
+  gap: 5rem;
+  padding: 3rem;
   &_title {
     color: #ff6060;
     font-weight: 700;
     font-size: 288px;
+    @media (max-width: 425px) {
+      font-size: 96px;
+    }
   }
   &_subtitle {
     color: #ff6060;
     font-size: 36px;
+    @media (max-width: 425px) {
+      font-size: 18px;
+    }
   }
   &_link {
     font-size: 18px;
     text-decoration: underline;
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
   }
 }

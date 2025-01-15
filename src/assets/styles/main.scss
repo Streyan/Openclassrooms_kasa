@@ -1,8 +1,6 @@
-@use "./utils/_variables.scss";
 @use "./base/_animations.scss";
 @use "./base/_typography.scss";
 @use "./base/_reset.scss";
-@use "./base/_normalize.scss";
 @use "./components/_badge.scss";
 @use "./components/_banner.scss";
 @use "./components/_card.scss";
@@ -16,6 +14,5 @@
 @use "./layout/_header.scss";
 @use "./layout/_host.scss";
 @use "./layout/_footer.scss";
-@use "./layout/_tags.scss";
 @use "./pages/_file.scss";
 @use "./utils/_layout.scss";
