@@ -13,13 +13,13 @@ function Dropdown({ title, text }: Props) {
       <div className="flex-space-between dropdown_header">
         <p className="dropdown_header_title">{title}</p>
         <button
-          className="dropdown_header_arrow"
+          className="dropdown_header_arrow rotate"
           onClick={() => setCollapse(!isCollapseOpen)}
         >
           {isCollapseOpen ? (
-            <i className="fa-solid fa-angle-up" />
+            <i className="fa-solid fa-angle-up open" />
           ) : (
-            <i className="fa-solid fa-angle-down" />
+            <i className="fa-solid fa-angle-up" />
           )}
         </button>
       </div>
