@@ -1,4 +1,7 @@
 .dropdowns {
   margin: 4rem;
   gap: 2rem;
+  @media (max-width: 425px) {
+    margin: 2rem;
+  }
 }

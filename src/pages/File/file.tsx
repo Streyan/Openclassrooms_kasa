@@ -23,7 +23,7 @@ function File() {
       <Carrousel imageURL={logementSelected.pictures} />
       <div className="logement_body">
         <div className="logement_title-host-rate">
-          <div className="logement_title-location">
+          <div className=" logement_title-location">
             <h2 className="logement_title">{logementSelected.title}</h2>
             <h3 className="logement_location">{logementSelected.location}</h3>
             <Tags tags={logementSelected.tags} />
