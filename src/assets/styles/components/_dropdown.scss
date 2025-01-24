@@ -9,16 +9,29 @@
     padding: 1.5rem;
     &_title {
       text-transform: capitalize;
+      font-weight: 700;
+      font-size: 18px;
+      @media (max-width: 425px) {
+        font-size: 13px;
+      }
     }
   }
-  &_content_open {
-    width: 100%;
-    background-color: #f6f6f673;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 1rem;
-  }
-  &_content_closed {
-    display: none;
+  &_content {
+    &_text p {
+      font-size: 18px;
+      @media (max-width: 425px) {
+        font-size: 12px;
+      }
+    }
+    &_open {
+      width: 100%;
+      background-color: #f6f6f673;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 1rem;
+    }
+    &_closed {
+      display: none;
+    }
   }
 }
