@@ -25,23 +25,27 @@ function Carrousel({ imageURL }: Props) {
         src={imageURL[currentSlide]}
         alt="image de la location"
       />
-      <p className="carrousel_number">
-        {currentSlide + 1}/{numberOfImage}
-      </p>
-      <div className="carrousel_arrows">
-        <i
-          className="fa-solid fa-angle-left carrousel_arrows_left"
-          onClick={() => {
-            changeSlide(currentSlide - 1);
-          }}
-        />
-        <i
-          className="fa-solid fa-angle-right carrousel_arrows_right"
-          onClick={() => {
-            changeSlide(currentSlide + 1);
-          }}
-        />
-      </div>
+      {numberOfImage > 1 && (
+        <div>
+          <p className="carrousel_number">
+            {currentSlide + 1}/{numberOfImage}
+          </p>
+          <div className="carrousel_arrows">
+            <i
+              className="fa-solid fa-angle-left carrousel_arrows_left"
+              onClick={() => {
+                changeSlide(currentSlide - 1);
+              }}
+            />
+            <i
+              className="fa-solid fa-angle-right carrousel_arrows_right"
+              onClick={() => {
+                changeSlide(currentSlide + 1);
+              }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

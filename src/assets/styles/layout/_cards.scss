@@ -6,7 +6,7 @@
   border-radius: 25px;
   margin: 2rem;
   gap: 1rem;
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

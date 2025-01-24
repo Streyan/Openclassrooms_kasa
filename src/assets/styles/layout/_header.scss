@@ -2,15 +2,15 @@
   padding: 2rem;
   min-height: 50px;
   a {
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       font-size: 12px;
     }
   }
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     padding: 0.5rem;
   }
   &_logo {
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       max-height: 50px;
     }
   }

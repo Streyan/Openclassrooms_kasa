@@ -11,7 +11,7 @@
       text-transform: capitalize;
       font-weight: 700;
       font-size: 18px;
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         font-size: 13px;
       }
     }
@@ -19,7 +19,7 @@
   &_content {
     &_text p {
       font-size: 18px;
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         font-size: 12px;
       }
     }

@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem;
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -30,7 +30,7 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       font-size: 18px;
     }
   }
@@ -42,7 +42,7 @@
     align-items: center;
     padding: 1rem 0 1rem 0;
     gap: 1rem;
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       flex-direction: row-reverse;
       justify-content: space-between;
       width: 100%;
@@ -53,7 +53,7 @@
     flex-direction: row;
     align-items: center;
     gap: 2rem;
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       flex-direction: column;
       width: 100%;
     }
@@ -61,7 +61,7 @@
   &_location {
     font-weight: 500;
     font-size: 18px;
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       font-size: 14px;
     }
   }
