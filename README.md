@@ -1,6 +1,8 @@
 # Projet 7 de la formation intégrateur web de Openclassrooms : Kasa
 # Créez une application web de location immobilière avec React
 
+![image](https://github.com/user-attachments/assets/fcbb2654-22f5-443f-9517-d32afc906f89)
+
 Dans ce projet, vous allez implémenter le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.
 
 Vous travaillerez sur la logique de présentation des données et les composants React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur.
